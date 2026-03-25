@@ -21,7 +21,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-lg font-semibold text-nude-pink mb-3">Contacto</h4>
             <div className="space-y-2">
-              <a href="tel:+34697377835" className="flex items-center gap-2 font-body text-sm text-nude-pink/60 hover:text-gold transition-colors">
+              <a href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-body text-sm text-nude-pink/60 hover:text-gold transition-colors">
                 <Phone className="w-4 h-4" />
                 +34 697 37 78 35
               </a>
@@ -36,7 +36,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-lg font-semibold text-nude-pink mb-3">Síguenos</h4>
             <a
-              href="https://www.instagram.com/beautynails_alicante"
+              href="https://www.instagram.com/beautynailsalacant"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 font-body text-sm text-nude-pink/60 hover:text-gold transition-colors"

@@ -105,7 +105,9 @@ const ServicesSection = () => {
           className="text-center mt-14"
         >
           <a
-            href="tel:+34697377835"
+            href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-body font-medium transition-all duration-300 hover:shadow-glow hover:scale-105"
           >
             Reserva tu cita

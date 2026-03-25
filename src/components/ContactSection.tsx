@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, MapPin, Clock, Instagram, Navigation } from "lucide-react";
+import { MessageCircle, MapPin, Clock, Instagram, Navigation, Phone } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -51,7 +51,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-heading text-lg font-semibold text-foreground mb-1">Teléfono</h3>
-                <a href="tel:+34697377835" className="font-body text-sm text-muted-foreground hover:text-gold transition-colors">
+                <a href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-gold transition-colors">
                   +34 697 37 78 35
                 </a>
               </div>
@@ -76,14 +76,16 @@ const ContactSection = () => {
             {/* Action buttons */}
             <div className="flex flex-wrap gap-3 pt-4">
               <a
-                href="tel:+34697377835"
+                href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-full font-body text-sm font-medium transition-all duration-300 hover:scale-105"
               >
-                <Phone className="w-4 h-4" />
-                Llamar
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp
               </a>
               <a
-                href="https://maps.google.com/?q=C.+de+Góngora,+6,+Las+Carolinas,+03012+Alicante"
+                href="https://maps.app.goo.gl/FRPLPvjgxKXwQVbt9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border hover:border-gold text-foreground px-6 py-3 rounded-full font-body text-sm font-medium transition-all duration-300 hover:scale-105"
@@ -92,7 +94,7 @@ const ContactSection = () => {
                 Cómo llegar
               </a>
               <a
-                href="https://www.instagram.com/beautynails_alicante"
+                href="https://www.instagram.com/beautynailsalacant"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border hover:border-gold text-foreground px-6 py-3 rounded-full font-body text-sm font-medium transition-all duration-300 hover:scale-105"
@@ -113,7 +115,7 @@ const ContactSection = () => {
           >
             <iframe
               title="Ubicación Beauty & Nails Alicante"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.5!2d-0.4897!3d38.3452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDIwJzQyLjciTiAwwrAyOSczMC4zIlc!5e0!3m2!1ses!2ses!4v1!5m2!1ses!2ses&q=C.+de+Góngora,+6,+Las+Carolinas,+03012+Alicante"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d50062.12223800282!2d-0.5321748!3d38.3516983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62377e68d27e79%3A0xe04b81e24538a993!2sBeauty%20%26%20Nails!5e0!3m2!1ses-419!2ses!4v1774402402444!5m2!1ses-419!2ses"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "400px" }}

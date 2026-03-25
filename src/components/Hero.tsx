@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, Star } from "lucide-react";
+import { MessageCircle, Star } from "lucide-react";
 import heroImage from "@/assets/hero-salon.jpg";
 
 const Hero = () => {
@@ -73,11 +73,13 @@ const Hero = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="tel:+34697377835"
+            href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-body font-medium text-base transition-all duration-300 hover:shadow-glow hover:scale-105"
           >
-            <Phone className="w-5 h-5 transition-transform group-hover:rotate-12" />
-            Llamar ahora
+            <MessageCircle className="w-5 h-5 transition-transform group-hover:rotate-12" />
+            WhatsApp
           </a>
           <a
             href="#servicios"

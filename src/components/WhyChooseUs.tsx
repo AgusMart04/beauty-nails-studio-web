@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
         >
           <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-3">¿Por qué elegirnos?</p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4">
-            La diferencia está en los detalles
+            Uñas con estilo, trato con amor
           </h2>
           <div className="gold-divider" />
         </motion.div>
