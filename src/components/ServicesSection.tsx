@@ -1,28 +1,57 @@
 import { motion } from "framer-motion";
-import { Hand, Footprints, Sparkles, Gem, Brush, Palette, Heart, Layers } from "lucide-react";
+import { Hand, Footprints, Sparkles, Gem, Brush, Palette, Heart, Layers, Eye, Scissors, Users, Zap, Droplets } from "lucide-react";
 
 const serviceCategories = [
   {
-    category: "Manos",
+    category: "Uñas",
     services: [
-      { icon: Hand, title: "Manicura clásica", description: "Limado, cutículas, hidratación y esmaltado perfecto para unas manos cuidadas." },
       { icon: Gem, title: "Uñas acrílicas", description: "Extensiones acrílicas con acabado natural o artístico. Máxima duración y resistencia." },
-      { icon: Sparkles, title: "Uñas de gel", description: "Construcción y esmaltado en gel para un acabado brillante, resistente y duradero." },
-      { icon: Layers, title: "Extensiones de uñas", description: "Alarga y moldea tus uñas con técnicas profesionales para un look impecable." },
-      { icon: Palette, title: "Nail art / Decoración", description: "Diseños exclusivos, decoración a mano y las últimas tendencias para cada estilo." },
+      { icon: Sparkles, title: "Semipermanente", description: "Esmaltado de larga duración con brillo intenso y perfecta cobertura hasta 4 semanas." },
+      { icon: Layers, title: "Uñas de gel", description: "Construcción y esmaltado en gel para un acabado brillante, resistente y duradero." },
+      { icon: Palette, title: "Otras técnicas", description: "Kapping, structured manicure y las últimas tendencias en cuidado de uñas." },
     ],
   },
   {
-    category: "Pies",
+    category: "Pedicura",
     services: [
-      { icon: Footprints, title: "Pedicura clásica", description: "Cuidado completo de pies con exfoliación, hidratación y esmaltado profesional." },
-      { icon: Heart, title: "Pedicura spa", description: "Experiencia relajante con masaje, tratamiento hidratante y acabado impecable." },
+      { icon: Heart, title: "Pedicura spa", description: "Experiencia relajante con exfoliación, masaje, tratamiento hidratante y acabado impecable." },
+      { icon: Footprints, title: "Pedicura estética", description: "Cuidado completo de pies con limado, cutículas, hidratación y esmaltado profesional." },
     ],
   },
   {
-    category: "Combinados",
+    category: "Cejas",
     services: [
-      { icon: Brush, title: "Manos + Pies", description: "El pack completo para lucir perfecta de manos a pies con descuento especial." },
+      { icon: Brush, title: "Diseño de cejas", description: "Diseño profesional adaptado a tu tipo de rostro para realzar tu mirada natural." },
+      { icon: Scissors, title: "Depilación de cejas", description: "Depilación precisa con cera o hilo para definir la forma perfecta de tus cejas." },
+    ],
+  },
+  {
+    category: "Micropigmentación",
+    services: [
+      { icon: Eye, title: "Micropigmentación de cejas", description: "Tatuaje cosmético para cejas perfectas con efecto pelo a pelo y duración prolongada." },
+    ],
+  },
+  {
+    category: "Peinados",
+    services: [
+      { icon: Users, title: "Peinados para eventos", description: "Peinados elegantes y sofisticados para bodas, fiestas y ocasiones especiales." },
+      { icon: Sparkles, title: "Ocasiones especiales", description: "Estilos únicos y personalizados para cualquier evento importante en tu vida." },
+    ],
+  },
+  {
+    category: "Maquillaje",
+    services: [
+      { icon: Palette, title: "Maquillaje profesional", description: "Maquillaje profesional para eventos, fotos o simplemente para lucir radiante." },
+    ],
+  },
+  {
+    category: "Tratamientos Corporales",
+    services: [
+      { icon: Zap, title: "Control de peso", description: "Programas personalizados de control de peso con seguimiento profesional." },
+      { icon: Heart, title: "Masajes reductivos", description: "Masajes especializados para reducir medidas y modelar tu silueta." },
+      { icon: Layers, title: "Maderoterapia", description: "Tratamiento con maderas para reafirmar, reducir celulitis y tonificar." },
+      { icon: Droplets, title: "Radiofrecuencia", description: "Tratamiento estético no invasivo para reafirmar y rejuvenecer la piel." },
+      { icon: Zap, title: "Ultracavitación", description: "Tratamiento avanzado para eliminación de grasa localizada (Previa cita)." },
     ],
   },
 ];
@@ -43,11 +72,11 @@ const ServicesSection = () => {
         >
           <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-3">Nuestros servicios</p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4">
-            Lo que ofrecemos
+            Todos nuestros servicios
           </h2>
           <div className="gold-divider" />
           <p className="font-body text-muted-foreground max-w-xl mx-auto">
-            Cada servicio está pensado para ofrecerte la mejor experiencia y resultados impecables
+            Tu lugar para realizar tu belleza con tratamientos profesionales de uñas, cejas, maquillaje y más
           </p>
         </motion.div>
 

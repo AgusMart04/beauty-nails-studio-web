@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Salón de uñas Beauty & Nails en Alicante"
+          alt="Beauty & Nails - Tu lugar para realizar tu belleza en Alicante"
           width={1920}
           height={1080}
           className="w-full h-full object-cover"
@@ -34,7 +34,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium leading-tight text-primary-foreground mb-6"
         >
-          Salón de uñas en Alicante que cuida cada detalle
+          Tu lugar para realizar tu belleza
         </motion.h1>
 
         <motion.p
@@ -43,7 +43,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-body text-lg md:text-xl text-nude-pink max-w-2xl mx-auto mb-8 leading-relaxed"
         >
-          Manicura, pedicura y uñas acrílicas con resultados duraderos y un trato cercano en Las Carolinas
+          Uñas acrílicas, cejas, micropigmentación, peinados, maquillaje profesional, masajes reductivos y tratamientos estéticos en Las Carolinas
         </motion.p>
 
         {/* Trust indicator */}

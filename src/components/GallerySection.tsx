@@ -33,7 +33,7 @@ const GallerySection = () => {
         >
           <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-3">Galería</p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4">
-            Nuestros trabajos
+            Nuestros trabajos y servicios
           </h2>
           <div className="gold-divider" />
         </motion.div>

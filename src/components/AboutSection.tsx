@@ -6,7 +6,7 @@ const features = [
   { icon: Heart, label: "Trato cercano y profesional" },
   { icon: Sparkles, label: "Resultados duraderos" },
   { icon: Smile, label: "Asesoramiento personalizado" },
-  { icon: Clock, label: "Ambiente agradable" },
+  { icon: Clock, label: "Gama completa de servicios" },
 ];
 
 const AboutSection = () => {
@@ -25,7 +25,7 @@ const AboutSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-card">
               <img
                 src={aboutImage}
-                alt="Manicura profesional en Beauty & Nails"
+                alt="Beauty & Nails - Tu lugar para realizar tu belleza"
                 loading="lazy"
                 width={800}
                 height={1024}
@@ -45,16 +45,17 @@ const AboutSection = () => {
           >
             <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-3">Sobre nosotros</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4 leading-tight">
-              Cuidamos cada detalle
+              Tu lugar para realizar tu belleza
             </h2>
             <div className="gold-divider-left" />
 
             <p className="font-body text-muted-foreground leading-relaxed mb-4 text-base">
-              En Beauty & Nails cuidamos cada detalle para que tus manos y pies luzcan perfectos.
-              Nos caracteriza el trato cercano, el asesoramiento personalizado y unos resultados que duran semanas.
+              En Beauty & Nails somos tu lugar para realizar tu belleza. Ofrecemos una gama completa de servicios
+              profesionales que van desde uñas acrílicas y semipermanentes hasta tratamientos corporales avanzados.
             </p>
             <p className="font-body text-muted-foreground leading-relaxed mb-8 text-base">
-              Cada cliente recibe una atención adaptada a su tipo de uña, porque creemos que la belleza también es confianza.
+              Nos caracterizamos por el trato cercano, el asesoramiento personalizado y resultados duraderos en todos
+              nuestros tratamientos: uñas, cejas, micropigmentación, peinados, maquillaje y tratamientos estéticos.
             </p>
 
             {/* Feature list */}
