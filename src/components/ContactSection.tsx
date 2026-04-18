@@ -39,7 +39,7 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-heading text-lg font-semibold text-foreground mb-1">Dirección</h3>
                 <p className="font-body text-sm text-muted-foreground">
-                  C. de Góngora, 6, Las Carolinas,<br />03012 Alicante
+                  Calle Principal, 123<br />Centro de la Ciudad<br />28001 Madrid
                 </p>
               </div>
             </div>
@@ -51,8 +51,8 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-heading text-lg font-semibold text-foreground mb-1">Teléfono</h3>
-                <a href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-gold transition-colors">
-                  +34 697 37 78 35
+                <a href="https://api.whatsapp.com/send/?phone=34624537879&text=Hola%21+Me+gusto+tu+demo+de+salon+de+belleza&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-gold transition-colors">
+                  +34 624 53 78 79
                 </a>
               </div>
             </div>
@@ -76,7 +76,7 @@ const ContactSection = () => {
             {/* Action buttons */}
             <div className="flex flex-wrap gap-3 pt-4">
               <a
-                href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias"
+                href="https://api.whatsapp.com/send/?phone=34624537879&text=Hola%21+Me+gusto+tu+demo+de+salon+de+belleza&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-full font-body text-sm font-medium transition-all duration-300 hover:scale-105"
@@ -85,7 +85,7 @@ const ContactSection = () => {
                 WhatsApp
               </a>
               <a
-                href="https://maps.app.goo.gl/FRPLPvjgxKXwQVbt9"
+                href="https://www.google.com/maps/search/salones+de+belleza+/@38.3620893,-0.5415219,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border hover:border-gold text-foreground px-6 py-3 rounded-full font-body text-sm font-medium transition-all duration-300 hover:scale-105"
@@ -94,7 +94,7 @@ const ContactSection = () => {
                 Cómo llegar
               </a>
               <a
-                href="https://www.instagram.com/beautynailsalacant"
+                href="https://www.instagram.com/beautynails_demo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border hover:border-gold text-foreground px-6 py-3 rounded-full font-body text-sm font-medium transition-all duration-300 hover:scale-105"
@@ -114,8 +114,8 @@ const ContactSection = () => {
             className="rounded-2xl overflow-hidden shadow-card min-h-[400px]"
           >
             <iframe
-              title="Ubicación Beauty & Nails Alicante"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d50062.12223800282!2d-0.5321748!3d38.3516983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62377e68d27e79%3A0xe04b81e24538a993!2sBeauty%20%26%20Nails!5e0!3m2!1ses-419!2ses!4v1774402402444!5m2!1ses-419!2ses"
+              title="Ubicación Beauty & Nails Centro de Belleza"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.1845378337435!2d-3.705790084604484!3d40.41677537936556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjAiTiAzwrA0MjQwLjAiRQ!5e0!3m2!1ses-419!2ses!4v1678886400000"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "400px" }}

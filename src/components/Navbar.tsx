@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, MessageCircle, Instagram } from "lucide-react";
+import { Menu, X, MessageCircle, Instagram, Calendar } from "lucide-react";
+import BookingModal from "./BookingModal";
 
 const navLinks = [
   { label: "Inicio", href: "#" },
@@ -13,6 +14,7 @@ const navLinks = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -47,8 +49,15 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <button
+            onClick={() => setIsBookingModalOpen(true)}
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2.5 rounded-full font-body text-sm font-medium transition-all duration-300 hover:scale-105"
+          >
+            <Calendar className="w-4 h-4" />
+            Reservar
+          </button>
           <a
-            href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias"
+            href="https://api.whatsapp.com/send/?phone=34624537879&text=Hola%21+Me+gusto+tu+demo+de+salon+de+belleza&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2.5 rounded-full font-body text-sm font-medium transition-all duration-300 hover:scale-105"
@@ -57,14 +66,13 @@ const Navbar = () => {
             WhatsApp
           </a>
           <a
-            href="https://www.instagram.com/beautynailsalacant"
+            href="https://www.instagram.com/beautynails_demo"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2.5 rounded-full font-body text-sm font-medium transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2.5 rounded-full font-body text-sm font-medium transition-all duration-300 hover:scale-105"
             aria-label="Instagram"
           >
             <Instagram className="w-4 h-4" />
-            Instagram
           </a>
         </div>
 
@@ -96,26 +104,36 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
+              <button
+                onClick={() => setIsBookingModalOpen(true)}
+                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-body font-medium mt-2"
+              >
+                <Calendar className="w-4 h-4" />
+                Reservar
+              </button>
               <a
-                href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias"
+                href="https://api.whatsapp.com/send/?phone=34624537879&text=Hola%21+Me+gusto+tu+demo+de+salon+de+belleza&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-body font-medium mt-2"
+                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-full font-body font-medium mt-2"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp
               </a>
               <a
-                href="https://www.instagram.com/beautynailsalacant"
+                href="https://www.instagram.com/beautynails_demo"
                 aria-label="Instagram"
+                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-full font-body font-medium mt-2"
               >
                 <Instagram className="w-4 h-4" />
-                Instagram
               </a>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
+      
+      {/* Booking Modal */}
+      <BookingModal isOpen={isBookingModalOpen} onClose={() => setIsBookingModalOpen(false)} />
     </nav>
   );
 };

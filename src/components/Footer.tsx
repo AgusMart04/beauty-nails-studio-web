@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="text-nude-pink">Nails</span>
             </p>
             <p className="font-body text-nude-pink/60 text-sm leading-relaxed">
-              Tu salón de uñas de confianza en Las Carolinas, Alicante.
+              Tu centro de belleza de confianza en el centro de la ciudad.
             </p>
           </div>
 
@@ -21,13 +21,13 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-lg font-semibold text-nude-pink mb-3">Contacto</h4>
             <div className="space-y-2">
-              <a href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-body text-sm text-nude-pink/60 hover:text-gold transition-colors">
+              <a href="https://api.whatsapp.com/send/?phone=34624537879&text=Hola%21+Me+gusto+tu+demo+de+salon+de+belleza&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-body text-sm text-nude-pink/60 hover:text-gold transition-colors">
                 <Phone className="w-4 h-4" />
-                +34 697 37 78 35
+                +34 624 53 78 79
               </a>
               <p className="flex items-center gap-2 font-body text-sm text-nude-pink/60">
                 <MapPin className="w-4 h-4" />
-                C. de Góngora, 6, 03012 Alicante
+                Calle Principal, 123, 28001 Madrid
               </p>
             </div>
           </div>
@@ -36,20 +36,20 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-lg font-semibold text-nude-pink mb-3">Síguenos</h4>
             <a
-              href="https://www.instagram.com/beautynailsalacant"
+              href="https://www.instagram.com/beautynails_demo"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 font-body text-sm text-nude-pink/60 hover:text-gold transition-colors"
             >
               <Instagram className="w-4 h-4" />
-              @beautynails_alicante
+              @beautynails_demo
             </a>
           </div>
         </div>
 
         <div className="gold-divider" />
         <p className="font-body text-nude-pink/40 text-xs flex items-center justify-center gap-1 text-center">
-          © {new Date().getFullYear()} Beauty & Nails. Todos los derechos reservados. Hecho con <Heart className="w-3 h-3 text-primary" /> en Alicante.
+          © {new Date().getFullYear()} Beauty & Nails. Todos los derechos reservados. Hecho con <Heart className="w-3 h-3 text-primary" /> para tu belleza.
         </p>
       </div>
     </footer>

@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Beauty & Nails - Tu lugar para realizar tu belleza en Alicante"
+          alt="Beauty & Nails - Tu lugar para realizar tu belleza"
           width={1920}
           height={1080}
           className="w-full h-full object-cover"
@@ -25,7 +25,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="text-gold-light font-body text-sm tracking-[0.3em] uppercase mb-6"
         >
-          Beauty & Nails — Alicante
+          Beauty & Nails — Centro de Belleza
         </motion.p>
 
         <motion.h1
@@ -43,7 +43,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-body text-lg md:text-xl text-nude-pink max-w-2xl mx-auto mb-8 leading-relaxed"
         >
-          Uñas acrílicas, cejas, micropigmentación, peinados, maquillaje profesional, masajes reductivos y tratamientos estéticos en Las Carolinas
+          Uñas acrílicas, cejas, micropigmentación, peinados, maquillaje profesional, masajes reductivos y tratamientos estéticos
         </motion.p>
 
         {/* Trust indicator */}
@@ -73,7 +73,7 @@ const Hero = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias"
+            href="https://api.whatsapp.com/send/?phone=34624537879&text=Hola%21+Me+gusto+tu+demo+de+salon+de+belleza&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-body font-medium text-base transition-all duration-300 hover:shadow-glow hover:scale-105"
