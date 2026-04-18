@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { Hand, Footprints, Sparkles, Gem, Brush, Palette, Heart, Layers, Eye, Scissors, Users, Zap, Droplets } from "lucide-react";
+import { Hand, Footprints, Sparkles, Gem, Brush, Palette, Heart, Layers, Eye, Scissors, Users, Zap, Droplets, Calendar } from "lucide-react";
+import { useState } from "react";
+import BookingModal from "./BookingModal";
 
 const serviceCategories = [
   {
@@ -58,6 +60,7 @@ const serviceCategories = [
 
 const ServicesSection = () => {
   let globalIndex = 0;
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
   return (
     <section id="servicios" className="section-padding bg-secondary/50">
@@ -133,14 +136,16 @@ const ServicesSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-center mt-14"
         >
-          <a
-            href="https://wa.me/34697377835?text=Hola%20Beauty%20%26%20Nails,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20y%20disponibilidad.%20Gracias"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => setIsBookingModalOpen(true)}
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-body font-medium transition-all duration-300 hover:shadow-glow hover:scale-105"
           >
-            Reserva tu cita
-          </a>
+            <Calendar className="w-4 h-4" />
+            Reservar cita
+          </button>
+          
+          {/* Booking Modal */}
+          <BookingModal isOpen={isBookingModalOpen} onClose={() => setIsBookingModalOpen(false)} />
         </motion.div>
       </div>
     </section>

@@ -15,7 +15,7 @@ const testimonials = [
     author: "Ana R.",
   },
   {
-    text: "Mis uñas se mantienen perfectas durante semanas. Las mejores de Alicante.",
+    text: "Mis uñas se mantienen perfectas durante semanas. ¡Las mejores!",
     author: "Carmen S.",
   },
 ];

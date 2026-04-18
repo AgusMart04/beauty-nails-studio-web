@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { X } from "lucide-react";
+import GalleryLightbox from "./GalleryLightbox";
 
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
@@ -19,7 +19,7 @@ const images = [
 ];
 
 const GallerySection = () => {
-  const [lightbox, setLightbox] = useState<number | null>(null);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   return (
     <section id="galeria" className="section-padding bg-secondary/50">
@@ -47,7 +47,7 @@ const GallerySection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="relative overflow-hidden rounded-2xl cursor-pointer group aspect-square"
-              onClick={() => setLightbox(index)}
+              onClick={() => setLightboxIndex(index)}
             >
               <img
                 src={img.src}
@@ -65,26 +65,15 @@ const GallerySection = () => {
         </div>
       </div>
 
-      {/* Lightbox */}
-      {lightbox !== null && (
-        <div
-          className="fixed inset-0 z-50 bg-soft-black/90 flex items-center justify-center p-6"
-          onClick={() => setLightbox(null)}
-        >
-          <button
-            className="absolute top-6 right-6 text-primary-foreground hover:text-gold transition-colors"
-            onClick={() => setLightbox(null)}
-            aria-label="Cerrar"
-          >
-            <X className="w-8 h-8" />
-          </button>
-          <img
-            src={images[lightbox].src}
-            alt={images[lightbox].alt}
-            className="max-w-full max-h-[85vh] rounded-xl object-contain"
-          />
-        </div>
-      )}
+      {/* Gallery Lightbox */}
+      <GalleryLightbox
+        images={images}
+        currentIndex={lightboxIndex || 0}
+        isOpen={lightboxIndex !== null}
+        onClose={() => setLightboxIndex(null)}
+        onPrevious={() => setLightboxIndex((prev) => prev !== null && prev > 0 ? prev - 1 : prev)}
+        onNext={() => setLightboxIndex((prev) => prev !== null && prev < images.length - 1 ? prev + 1 : prev)}
+      />
     </section>
   );
 };

@@ -1,12 +1,14 @@
 # Beauty & Nails Studio
 
-Sitio web para el salón de uñas Beauty & Nails en Alicante.
+Demo de sitio web para centro de belleza - Proyecto de portafolio.
 
 ## Características
 
 - Manicura y pedicura profesional
 - Uñas acrílicas y de gel
-- Citas online
+- Cejas y micropigmentación
+- Peinados y maquillaje profesional
+- Tratamientos corporales
 - Galería de trabajos
 - Información de contacto
 

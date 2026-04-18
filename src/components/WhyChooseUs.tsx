@@ -20,7 +20,7 @@ const reasons = [
   {
     icon: BadgePercent,
     title: "Calidad-precio",
-    description: "Servicio premium a precios justos. La mejor relación calidad-precio de Alicante.",
+    description: "Servicio premium a precios justos. La mejor relación calidad-precio.",
   },
 ];
 
